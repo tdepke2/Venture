@@ -1,0 +1,57 @@
+version,1.0
+name,Big square.
+size,9,9
+
+data:
+connectionX,2
+connectionY,0
+connectionOffset,0
+connectionDir,N
+minMaxConnections,1,1
+weight,30.000000
+canRotate,true
+end
+
+conditions:
+end
+
+events:
+end
+
+tiles:
+Tile,0,0,R,3,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,1, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,2, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,3, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,4, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,5, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,6, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,7, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,0,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,1,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,1,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,2,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,2,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,3,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,3,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,4,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,4,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,5,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,5,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,6,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,6,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,7,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,7,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,0, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,1, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,2, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,3, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,4, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,5, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,6, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,7, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+Tile,8,8, , ,0,0,COLOR_BLACK,COLOR_BLACK,false,false,COLOR_GRAY1
+end
+
+entities:
+end
