@@ -1,241 +1,48 @@
-Room name: Start room.
-        Total score = 0
-        Total score = 0
-        Total score = 0
-        Total score = 0
-        Total score = 0
-        Total score = 0
-        Total score = 0
-        Total score = 0
-        Total score = 0
-        Total score = 0
-Final score = 0, at (7, 23) with rotation 90 degress CW
+Room name: Start room., weight = 1.05263
+  Final position at (25, 24) with rotation 270 degress CW
+  (numFails reached 0)
 
-Room name: Boss room.
-    Target = Start room., distance = 17.4098, weightMult = 0.00913242, thisScore = 0.158994
-        Total score = 0.079497
-        Collision found, skipping...
-    Target = Start room., distance = 5.70984, weightMult = 0.00913242, thisScore = 0.0521447
-        Total score = 0.0260723
-    Target = Start room., distance = 26.9746, weightMult = 0.00913242, thisScore = 0.246344
-        Total score = 0.123172
-    Target = Start room., distance = 18.5864, weightMult = 0.00913242, thisScore = 0.169739
-        Total score = 0.0848694
-    Target = Start room., distance = 10.0642, weightMult = 0.00913242, thisScore = 0.0919102
-        Total score = 0.0459551
-    Target = Start room., distance = 16.635, weightMult = 0.00913242, thisScore = 0.151918
-        Total score = 0.0759591
-    Target = Start room., distance = 22.8727, weightMult = 0.00913242, thisScore = 0.208883
-        Total score = 0.104441
-    Target = Start room., distance = 13.2966, weightMult = 0.00913242, thisScore = 0.12143
-        Total score = 0.0607152
-    Target = Start room., distance = 19.5647, weightMult = 0.00913242, thisScore = 0.178673
-        Total score = 0.0893367
-    Target = Start room., distance = 3.47725, weightMult = 0.00913242, thisScore = 0.0317557
-        Total score = 0.0158778
-Final score = 0.123172, at (40, 37) with rotation 0 degress CW
+Room name: Boss room., weight = 0.0105263
+  Final position at (19, 2) with rotation 0 degress CW
+  (numFails reached 0)
 
-Room name: Basic room.
-    Target = Start room., distance = 33.6576, weightMult = 0.547945, thisScore = 18.4425
-    Target = Boss room., distance = 29.2812, weightMult = 0.0143885, thisScore = 0.421313
-        Total score = 18.8638
-    Target = Start room., distance = 25.3841, weightMult = 0.547945, thisScore = 13.9091
-    Target = Boss room., distance = 6.56353, weightMult = 0.0143885, thisScore = 0.0944392
-        Total score = 7.00176
-    Target = Start room., distance = 15.335, weightMult = 0.547945, thisScore = 8.40271
-    Target = Boss room., distance = 4.17017, weightMult = 0.0143885, thisScore = 0.0600024
-        Total score = 4.23136
-    Target = Start room., distance = 27.3344, weightMult = 0.547945, thisScore = 14.9778
-        Collision found, skipping...
-    Target = Start room., distance = 14.0939, weightMult = 0.547945, thisScore = 7.72269
-    Target = Boss room., distance = 9.03765, weightMult = 0.0143885, thisScore = 0.130038
-        Total score = 3.92636
-    Target = Start room., distance = 28.2089, weightMult = 0.547945, thisScore = 15.4569
-    Target = Boss room., distance = 20.2546, weightMult = 0.0143885, thisScore = 0.291434
-        Total score = 7.87418
-    Target = Start room., distance = 12.8509, weightMult = 0.547945, thisScore = 7.04161
-    Target = Boss room., distance = 22.1853, weightMult = 0.0143885, thisScore = 0.319213
-        Total score = 7.36083
-    Target = Start room., distance = 21.4527, weightMult = 0.547945, thisScore = 11.7549
-    Target = Boss room., distance = 3.65433, weightMult = 0.0143885, thisScore = 0.0525802
-        Total score = 5.90374
-    Target = Start room., distance = 18.2122, weightMult = 0.547945, thisScore = 9.97931
-    Target = Boss room., distance = 19.2356, weightMult = 0.0143885, thisScore = 0.276771
-        Total score = 5.12804
-    Target = Start room., distance = 12.0539, weightMult = 0.547945, thisScore = 6.6049
-    Target = Boss room., distance = 22.3747, weightMult = 0.0143885, thisScore = 0.321939
-        Total score = 6.92684
-        Collision found, skipping...
-    Target = Start room., distance = 8.99094, weightMult = 0.547945, thisScore = 4.92654
-    Target = Boss room., distance = 32.496, weightMult = 0.0143885, thisScore = 0.467569
-        Total score = 5.39411
-Final score = 18.8638, at (41, 0) with rotation 180 degress CW
+Room name: Basic room., weight = 0.631579
+  Final position at (25, 0) with rotation 0 degress CW
+  (numFails reached 2)
 
-Room name: Big square.
-    Target = Start room., distance = 7.40122, weightMult = 0.273973, thisScore = 2.02773
-    Target = Boss room., distance = 15.0499, weightMult = 0.0253165, thisScore = 0.381011
-    Target = Basic room., distance = 36.2725, weightMult = 0.431655, thisScore = 15.6572
-        Total score = 18.0659
-        Collision found, skipping...
-    Target = Start room., distance = 18.313, weightMult = 0.273973, thisScore = 5.01726
-    Target = Boss room., distance = 17.887, weightMult = 0.0253165, thisScore = 0.452836
-    Target = Basic room., distance = 46.3325, weightMult = 0.431655, thisScore = 19.9996
-        Total score = 25.4697
-    Target = Start room., distance = 12.4709, weightMult = 0.273973, thisScore = 3.41669
-    Target = Boss room., distance = 16.2171, weightMult = 0.0253165, thisScore = 0.410559
-    Target = Basic room., distance = 41.4315, weightMult = 0.431655, thisScore = 17.8841
-        Total score = 21.7113
-    Target = Start room., distance = 21.6105, weightMult = 0.273973, thisScore = 5.92067
-    Target = Boss room., distance = 24.1623, weightMult = 0.0253165, thisScore = 0.611703
-    Target = Basic room., distance = 3.16271, weightMult = 0.431655, thisScore = 1.3652
-        Total score = 7.89758
-    Target = Start room., distance = 17.4008, weightMult = 0.273973, thisScore = 4.76733
-    Target = Boss room., distance = 17.3697, weightMult = 0.0253165, thisScore = 0.439738
-    Target = Basic room., distance = 45.4273, weightMult = 0.431655, thisScore = 19.6089
-        Total score = 24.816
-    Target = Start room., distance = 13.561, weightMult = 0.273973, thisScore = 3.71535
-    Target = Boss room., distance = 4.84909, weightMult = 0.0253165, thisScore = 0.122762
-    Target = Basic room., distance = 23.5973, weightMult = 0.431655, thisScore = 10.1859
-        Total score = 7.012
-    Target = Start room., distance = 1, weightMult = 0.273973, thisScore = 0.273973
-    Target = Boss room., distance = 31.1588, weightMult = 0.0253165, thisScore = 0.78883
-    Target = Basic room., distance = 43.2888, weightMult = 0.431655, thisScore = 18.6858
-        Total score = 9.87431
-    Target = Start room., distance = 14, weightMult = 0.273973, thisScore = 3.83562
-    Target = Boss room., distance = 39.8973, weightMult = 0.0253165, thisScore = 1.01006
-    Target = Basic room., distance = 25.7831, weightMult = 0.431655, thisScore = 11.1294
-        Total score = 15.9751
-    Target = Start room., distance = 19.6007, weightMult = 0.273973, thisScore = 5.37005
-    Target = Boss room., distance = 30.322, weightMult = 0.0253165, thisScore = 0.767644
-    Target = Basic room., distance = 8.81605, weightMult = 0.431655, thisScore = 3.80549
-        Total score = 9.94319
-    Target = Start room., distance = 12.2132, weightMult = 0.273973, thisScore = 3.34608
-    Target = Boss room., distance = 6.80035, weightMult = 0.0253165, thisScore = 0.172161
-    Target = Basic room., distance = 22.1679, weightMult = 0.431655, thisScore = 9.56889
-        Total score = 6.54357
-Final score = 25.4697, at (17, 49) with rotation 180 degress CW
+Room name: Basic room., weight = 0.631579
+  Final position at (35, 14) with rotation 90 degress CW
+  (numFails reached 0)
 
-Room name: Treasure room.
-    Target = Start room., distance = 4.2686, weightMult = 0.0456621, thisScore = 0.194913
-    Target = Boss room., distance = 19.2389, weightMult = 0.0689655, thisScore = 1.32682
-    Target = Basic room., distance = 24.7182, weightMult = 0.0719424, thisScore = 1.77829
-    Target = Big square., distance = 20.0045, weightMult = 0.126582, thisScore = 2.53222
-        Total score = 2.91612
-    Target = Start room., distance = 21.9703, weightMult = 0.0456621, thisScore = 1.00321
-    Target = Boss room., distance = 13.4165, weightMult = 0.0689655, thisScore = 0.925275
-    Target = Basic room., distance = 11.1176, weightMult = 0.0719424, thisScore = 0.799825
-    Target = Big square., distance = 29.4121, weightMult = 0.126582, thisScore = 3.72305
-        Total score = 6.45136
-    Target = Start room., distance = 7.41643, weightMult = 0.0456621, thisScore = 0.33865
-    Target = Boss room., distance = 15.095, weightMult = 0.0689655, thisScore = 1.04104
-    Target = Basic room., distance = 34.0207, weightMult = 0.0719424, thisScore = 2.44753
-    Target = Big square., distance = 8.00806, weightMult = 0.126582, thisScore = 1.01368
-        Total score = 4.8409
-    Target = Start room., distance = 31.4679, weightMult = 0.0456621, thisScore = 1.43689
-    Target = Boss room., distance = 4, weightMult = 0.0689655, thisScore = 0.275862
-    Target = Basic room., distance = 39.2744, weightMult = 0.0719424, thisScore = 2.8255
-    Target = Big square., distance = 14.283, weightMult = 0.126582, thisScore = 1.80798
-        Total score = 3.17312
-        Collision found, skipping...
-    Target = Start room., distance = 7.21394, weightMult = 0.0456621, thisScore = 0.329404
-    Target = Boss room., distance = 24.1496, weightMult = 0.0689655, thisScore = 1.66549
-    Target = Basic room., distance = 43.3823, weightMult = 0.0719424, thisScore = 3.12103
-    Target = Big square., distance = 6.00926, weightMult = 0.126582, thisScore = 0.760665
-        Total score = 5.87659
-    Target = Start room., distance = 13.2966, weightMult = 0.0456621, thisScore = 0.607152
-    Target = Boss room., distance = 31.8021, weightMult = 0.0689655, thisScore = 2.19325
-    Target = Basic room., distance = 18.474, weightMult = 0.0719424, thisScore = 1.32906
-    Target = Big square., distance = 36.0259, weightMult = 0.126582, thisScore = 4.56024
-        Total score = 8.6897
-    Target = Start room., distance = 11.0607, weightMult = 0.0456621, thisScore = 0.505055
-    Target = Boss room., distance = 30.8782, weightMult = 0.0689655, thisScore = 2.12953
-    Target = Basic room., distance = 19.9755, weightMult = 0.0719424, thisScore = 1.43708
-    Target = Big square., distance = 34.0752, weightMult = 0.126582, thisScore = 4.31332
-        Total score = 8.38499
-    Target = Start room., distance = 18.0049, weightMult = 0.0456621, thisScore = 0.822142
-    Target = Boss room., distance = 42.9183, weightMult = 0.0689655, thisScore = 2.95988
-    Target = Basic room., distance = 26.7649, weightMult = 0.0719424, thisScore = 1.92553
-    Target = Big square., distance = 44.08, weightMult = 0.126582, thisScore = 5.57975
-        Total score = 11.2873
-    Target = Start room., distance = 11.0068, weightMult = 0.0456621, thisScore = 0.502592
-    Target = Boss room., distance = 26.7567, weightMult = 0.0689655, thisScore = 1.84529
-    Target = Basic room., distance = 47.7592, weightMult = 0.0719424, thisScore = 3.43591
-    Target = Big square., distance = 4.84909, weightMult = 0.126582, thisScore = 0.613809
-        Total score = 6.3976
-        Collision found, skipping...
-    Target = Start room., distance = 17.1678, weightMult = 0.0456621, thisScore = 0.783917
-    Target = Boss room., distance = 47.1507, weightMult = 0.0689655, thisScore = 3.25177
-    Target = Basic room., distance = 34.762, weightMult = 0.0719424, thisScore = 2.50087
-    Target = Big square., distance = 44.4086, weightMult = 0.126582, thisScore = 5.62134
-        Total score = 12.1579
-Final score = 12.1579, at (0, 2) with rotation 90 degress CW
+Room name: Basic room., weight = 0.631579
+  Final position at (11, 26) with rotation 270 degress CW
+  (numFails reached 0)
 
-Room name: Boss room.
-    Target = Start room., distance = 11.6442, weightMult = 0.00913242, thisScore = 0.10634
-    Target = Boss room., distance = 26.8024, weightMult = 0.0952381, thisScore = 2.55261
-    Target = Basic room., distance = 16.9618, weightMult = 0.0143885, thisScore = 0.244055
-    Target = Big square., distance = 32.0285, weightMult = 0.0253165, thisScore = 0.810847
-    Target = Treasure room., distance = 15.9317, weightMult = 0.0689655, thisScore = 1.09874
-        Total score = 1.20315
-    Target = Start room., distance = 23.717, weightMult = 0.00913242, thisScore = 0.216593
-    Target = Boss room., distance = 1.81025, weightMult = 0.0952381, thisScore = 0.172405
-    Target = Basic room., distance = 34.9303, weightMult = 0.0143885, thisScore = 0.502595
-    Target = Big square., distance = 10.1777, weightMult = 0.0253165, thisScore = 0.257663
-    Target = Treasure room., distance = 46.4976, weightMult = 0.0689655, thisScore = 3.20673
-        Total score = 0.544498
-        Collision found, skipping...
-    Target = Start room., distance = 0.405694, weightMult = 0.00913242, thisScore = 0.00370497
-    Target = Boss room., distance = 35, weightMult = 0.0952381, thisScore = 3.33333
-    Target = Basic room., distance = 42.7601, weightMult = 0.0143885, thisScore = 0.615253
-    Target = Big square., distance = 21.629, weightMult = 0.0253165, thisScore = 0.54757
-    Target = Treasure room., distance = 20, weightMult = 0.0689655, thisScore = 1.37931
-        Total score = 2.93959
-    Target = Start room., distance = 4.35327, weightMult = 0.00913242, thisScore = 0.0397559
-    Target = Boss room., distance = 28.8281, weightMult = 0.0952381, thisScore = 2.74554
-    Target = Basic room., distance = 25.003, weightMult = 0.0143885, thisScore = 0.359755
-    Target = Big square., distance = 28.4235, weightMult = 0.0253165, thisScore = 0.719583
-    Target = Treasure room., distance = 12.3848, weightMult = 0.0689655, thisScore = 0.854122
-        Total score = 2.35938
-    Target = Start room., distance = 24.4766, weightMult = 0.00913242, thisScore = 0.22353
-    Target = Boss room., distance = 20.3059, weightMult = 0.0952381, thisScore = 1.93389
-    Target = Basic room., distance = 4.66271, weightMult = 0.0143885, thisScore = 0.0670894
-    Target = Big square., distance = 35.703, weightMult = 0.0253165, thisScore = 0.903874
-    Target = Treasure room., distance = 31.108, weightMult = 0.0689655, thisScore = 2.14538
-        Total score = 1.31844
-    Target = Start room., distance = 13.725, weightMult = 0.00913242, thisScore = 0.125342
-    Target = Boss room., distance = 33.0512, weightMult = 0.0952381, thisScore = 3.14774
-    Target = Basic room., distance = 53.127, weightMult = 0.0143885, thisScore = 0.764417
-    Target = Big square., distance = 9.60263, weightMult = 0.0253165, thisScore = 0.243105
-    Target = Treasure room., distance = 38.0454, weightMult = 0.0689655, thisScore = 2.62382
-        Total score = 1.72611
-    Target = Start room., distance = 14.6923, weightMult = 0.00913242, thisScore = 0.134177
-    Target = Boss room., distance = 44.3289, weightMult = 0.0952381, thisScore = 4.2218
-    Target = Basic room., distance = 32.8638, weightMult = 0.0143885, thisScore = 0.47286
-    Target = Big square., distance = 41.8407, weightMult = 0.0253165, thisScore = 1.05926
-        Collision found, skipping...
-    Target = Start room., distance = 14.4203, weightMult = 0.00913242, thisScore = 0.131692
-    Target = Boss room., distance = 25.9061, weightMult = 0.0952381, thisScore = 2.46725
-    Target = Basic room., distance = 13.823, weightMult = 0.0143885, thisScore = 0.198893
-    Target = Big square., distance = 33.2492, weightMult = 0.0253165, thisScore = 0.841753
-    Target = Treasure room., distance = 18.3516, weightMult = 0.0689655, thisScore = 1.26563
-        Total score = 1.2263
-    Target = Start room., distance = 12.9083, weightMult = 0.00913242, thisScore = 0.117884
-    Target = Boss room., distance = 20.6271, weightMult = 0.0952381, thisScore = 1.96448
-    Target = Basic room., distance = 14.8891, weightMult = 0.0143885, thisScore = 0.214231
-    Target = Big square., distance = 28.5902, weightMult = 0.0253165, thisScore = 0.723802
-    Target = Treasure room., distance = 22.178, weightMult = 0.0689655, thisScore = 1.52952
-        Total score = 1.13748
-    Target = Start room., distance = 25.4014, weightMult = 0.00913242, thisScore = 0.231976
-    Target = Boss room., distance = 25.5753, weightMult = 0.0952381, thisScore = 2.43574
-    Target = Basic room., distance = 2.26388, weightMult = 0.0143885, thisScore = 0.0325738
-    Target = Big square., distance = 39.6222, weightMult = 0.0253165, thisScore = 1.00309
-    Target = Treasure room., distance = 28.2345, weightMult = 0.0689655, thisScore = 1.94721
-        Total score = 1.41265
-    Target = Start room., distance = 10.1777, weightMult = 0.00913242, thisScore = 0.0929468
-    Target = Boss room., distance = 30.1248, weightMult = 0.0952381, thisScore = 2.86903
-    Target = Basic room., distance = 20.2916, weightMult = 0.0143885, thisScore = 0.291966
-    Target = Big square., distance = 33.0771, weightMult = 0.0253165, thisScore = 0.837395
-    Target = Treasure room., distance = 11.8885, weightMult = 0.0689655, thisScore = 0.8199
-        Total score = 1.22781
-Final score = 2.93959, at (0, 28) with rotation 0 degress CW
+Room name: Basic room., weight = 0.631579
+  Final position at (3, 30) with rotation 90 degress CW
+  (numFails reached 0)
+
+Room name: Big square., weight = 0.315789
+  Final position at (8, 6) with rotation 270 degress CW
+  (numFails reached 1)
+
+Room name: Big square., weight = 0.315789
+  Final position at (19, 9) with rotation 270 degress CW
+  (numFails reached 9)
+
+Room name: Big square., weight = 0.315789
+  Final position at (22, 32) with rotation 180 degress CW
+  (numFails reached 14)
+
+Room name: Big square., weight = 0.315789
+  Final position at (4, 16) with rotation 90 degress CW
+  (numFails reached 11)
+
+Room name: Treasure room., weight = 0.0526316
+  Final position at (14, 19) with rotation 0 degress CW
+  (numFails reached 10)
+
+Room name: Boss room., weight = 0.0105263
+  Final position at (1, 5) with rotation 0 degress CW
+  (numFails reached 3)
 

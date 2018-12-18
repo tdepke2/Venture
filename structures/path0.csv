@@ -1,0 +1,27 @@
+version,1.0
+name,Test path.
+size,3,2
+
+data:
+variance,1.000000
+end
+
+conditions:
+end
+
+events:
+end
+
+tiles:
+Tile,0,0,`,`,0,0,COLOR_BLACK,COLOR_BLACK,false,true,COLOR_GRAY1
+Tile,1,0,.,.,0,0,COLOR_BLACK,COLOR_BLACK,false,true,COLOR_GRAY1
+Tile,2,0,',',0,0,COLOR_BLACK,COLOR_BLACK,false,true,COLOR_GRAY1
+
+Tile,0,1,#,#,0,0,COLOR_BLACK,COLOR_BLACK,true,false,COLOR_GRAY1
+Tile,1,1,$,$,0,0,COLOR_BLACK,COLOR_BLACK,true,false,COLOR_GRAY1
+Tile,2,1,%,%,0,0,COLOR_BLACK,COLOR_BLACK,true,false,COLOR_GRAY1
+end
+
+entities:
+Entity,0,0,s,s,0,0,COLOR_BLACK,COLOR_BLACK,4
+end

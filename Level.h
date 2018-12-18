@@ -41,7 +41,6 @@ class Level {
     private:
     void _addRoom(const Room* room, vector<pair<PairXYi, PairXYi>>& roomBounds, vector<pair<const Room*, int>>& roomData);
     static vector<string> _parseCSV(const string& str);    // Parse a line of a CSV file. Splits the line and returns as a vector of strings, there will always be at least one string in the vector. Comments must be on their own line and start with a "#".
-    static float _scoreLastRoom(const vector<pair<PairXYi, PairXYi>>& roomBounds, const vector<pair<const Room*, int>>& roomData);
 };
 
 #endif

@@ -170,6 +170,12 @@ void Level::generateLevel(const string& structureDir, int levelID) {
     _addRoom(rooms[0], roomBounds, roomData);
     _addRoom(rooms[1], roomBounds, roomData);
     _addRoom(rooms[2], roomBounds, roomData);
+    _addRoom(rooms[2], roomBounds, roomData);
+    _addRoom(rooms[2], roomBounds, roomData);
+    _addRoom(rooms[2], roomBounds, roomData);
+    _addRoom(rooms[3], roomBounds, roomData);
+    _addRoom(rooms[3], roomBounds, roomData);
+    _addRoom(rooms[3], roomBounds, roomData);
     _addRoom(rooms[3], roomBounds, roomData);
     _addRoom(rooms[4], roomBounds, roomData);
     _addRoom(rooms[1], roomBounds, roomData);
@@ -418,11 +424,9 @@ void Level::_mergeRoom(const Room* room, PairXYi position, int rotation) {
 void Level::_addRoom(const Room* room, vector<pair<PairXYi, PairXYi>>& roomBounds, vector<pair<const Room*, int>>& roomData) {
     roomBounds.push_back(make_pair(PairXYi(0, 0), PairXYi(0, 0)));
     roomData.push_back(make_pair(room, 0));
-    pair<PairXYi, PairXYi> bestBounds;
-    float bestScore = -1.0f;
-    int bestRotation, numFails = 0;
-    Game::logFile << "Room name: " << roomData.back().first->_levelName << endl;
-    for (unsigned int i = 0; i < 10; ++i) {
+    int numFails;
+    Game::logFile << "Room name: " << roomData.back().first->_levelName << ", weight = " << roomData.back().first->weight << endl;
+    for (numFails = 0; numFails < 5000; ++numFails) {
         int rotation = room->canRotate ? Game::randomInteger(4) : 0;
         if (rotation == 0 || rotation == 2) {
             PairXYi position(Game::randomInteger(0, _tileArraySize.x - room->_tileArraySize.x), Game::randomInteger(0, _tileArraySize.y - room->_tileArraySize.y));
@@ -433,26 +437,21 @@ void Level::_addRoom(const Room* room, vector<pair<PairXYi, PairXYi>>& roomBound
         }
         roomData.back().second = rotation;
         
-        float testScore = _scoreLastRoom(roomBounds, roomData);
-        if (testScore != -1.0f) {
-            if (testScore > bestScore) {
-                bestScore = testScore;
-                bestBounds = roomBounds.back();
-                bestRotation = rotation;
-                assert(testScore >= 0.0);
+        bool collision = false;
+        for (unsigned int i = 0; i < roomBounds.size() - 1; ++i) {
+            if (roomBounds.back().first.x <= roomBounds[i].second.x && roomBounds.back().second.x >= roomBounds[i].first.x && roomBounds.back().first.y <= roomBounds[i].second.y && roomBounds.back().second.y >= roomBounds[i].first.y) {
+                collision = true;
             }
-        } else {
-            ++numFails;
-            if (numFails >= 500) {
-                throw runtime_error("Unable to add enough rooms.");
-            }
-            --i;
+        }
+        if (!collision) {
+            Game::logFile << "  Final position at (" << roomBounds.back().first.x << ", " << roomBounds.back().first.y << ") with rotation " << roomData.back().second * 90 << " degress CW" << endl;
+            Game::logFile << "  (numFails reached " << numFails << ")" << endl << endl;
+            _mergeRoom(room, roomBounds.back().first, roomData.back().second);
+            return;
         }
     }
-    Game::logFile << "Final score = " << bestScore << ", at (" << bestBounds.first.x << ", " << bestBounds.first.y << ") with rotation " << bestRotation * 90 << " degress CW" << endl << endl;
-    _mergeRoom(room, bestBounds.first, bestRotation);
-    roomBounds.back() = bestBounds;
-    roomData.back().second = bestRotation;
+    
+    throw runtime_error("Unable to add enough rooms.");
 }
 
 vector<string> Level::_parseCSV(const string& str) {    // Parse a line of a CSV file. Splits the line and returns as a vector of strings, there will always be at least one string in the vector. Comments must be on their own line and start with a "#".
@@ -483,41 +482,4 @@ vector<string> Level::_parseCSV(const string& str) {    // Parse a line of a CSV
         values.push_back(str.substr(points[i - 1] + 1, points[i] - points[i - 1] - 1));
     }
     return values;
-}
-
-float Level::_scoreLastRoom(const vector<pair<PairXYi, PairXYi>>& roomBounds, const vector<pair<const Room*, int>>& roomData) {
-    float score = 0.0;
-    int numBadPositions = 0;
-    for (unsigned int i = 0; i < roomBounds.size() - 1; ++i) {
-        if (roomBounds.back().first.x <= roomBounds[i].second.x && roomBounds.back().second.x >= roomBounds[i].first.x && roomBounds.back().first.y <= roomBounds[i].second.y && roomBounds.back().second.y >= roomBounds[i].first.y) {
-            Game::logFile << "        Collision found, skipping..." << endl;
-            return -1.0f;
-        }
-        // Factors in order: proximity to other rooms and weights, connection space, connection rotation.
-        // Weights and distance multiplier:
-        // similar and large - big score - 1.0
-        // a little different - medium score - 0.5
-        // very different - low score - 0.1
-        // similar and small - low score - 0.1
-        // a = min, mult = a / b * C, if mult > 0.5 and a < 0.3 then mult /= 10.0
-        // mult = a * C / (b + 10)
-        
-        double deltaX = roomBounds.back().first.x + roomData.back().first->_tileArraySize.x / 2.0 - (roomBounds[i].first.x + roomData[i].first->_tileArraySize.x / 2.0);
-        double deltaY = roomBounds.back().first.y + roomData.back().first->_tileArraySize.y / 2.0 - (roomBounds[i].first.y + roomData[i].first->_tileArraySize.y / 2.0);
-        float distance = static_cast<float>(sqrt(deltaX * deltaX + deltaY * deltaY) - (roomData[i].first->_tileArraySize.x + roomData[i].first->_tileArraySize.y) / 4.0 - (roomData.back().first->_tileArraySize.x + roomData.back().first->_tileArraySize.y) / 4.0);
-        float weightMultiplier;
-        if (roomData.back().first->weight < roomData[i].first->weight) {
-            weightMultiplier = roomData.back().first->weight / (roomData[i].first->weight + 0.1f);
-        } else {
-            weightMultiplier = roomData[i].first->weight / (roomData.back().first->weight + 0.1f);
-        }
-        float currentScore = distance * weightMultiplier;
-        if (currentScore < 0.3) {
-            ++numBadPositions;
-        }
-        score += currentScore;
-        Game::logFile << "    Target = " << roomData[i].first->_levelName << ", distance = " << distance << ", weightMult = " << weightMultiplier << ", thisScore = " << currentScore << endl;
-    }
-    Game::logFile << "        Total score = " << score / pow(2.0, numBadPositions) << endl;
-    return score / pow(2.0, numBadPositions);
 }
